@@ -71,3 +71,60 @@ Al concluir el paso 2 debe mostrar un mensaje indicando que esta listo y que deb
 * Crear Pàgina "en Construcción"
 * Cargar Template de "enConstrucción" en Pàgina "en Construccion"
 * Cambiar ajustes de lectura "Pàgina estatica y escoger "en Construcción"
+
+
+
+
+
+
+
+
+
+# pluginStep
+> El objetivo de este plugin es realizar las configuración básicas y reiteras en cada proyecto
+
+### Al activar
+> Una vez instalado wordpress, el primer plugin que se instala es este, al activarse genera un welcome dashboard fullscreen, dando la bienvenida al usuario admin y tiene un link para iniciar el paso uno. (el paso uno solo puede activarlo el usuario con nombre de usuario "admin")
+
+### Paso 1
+Una vez que el usuario admin pulsa en el link empieza la ejecución de las siguientes tareas.
+
++ Muestra un mensaje indicando que empezo el proceso
++ crea 2 usuarios nuevos con el rol "administrator":
+  + usuario: "admGod", contraseña: "xc21bn65A-!JC" , email: "admgod@ecommercepyme.com"
+  + usuario: "admBoss", contraseña: "xc21bn65A-!JC" , email: "wp@ecommercepyme.com"
++ cambia el nombre del rol "administrator" por "epjc"
++ crea unnuevo rol de con el nombre "admin"
++ Muestra un mensaje indicando que termino el paso uno y que debe cerrar sesion y logearse con el usuario admGod
++ en el dashboard esta un link para cerrar sesion. 
+
+### Paso 2
+Una vez que ingresa con el nombre de usuario admGod en el dashboard aparece un mensaje que el paso uno fue exitoso y aparece un link para iniciar este segundo paso. al clickear el link empieza a ejecutar las siguientes tareas.
+
++ Muestra un mensaje indicando que emmpezo el paso 2
++ borra al usuario con nombre de usuario "admin" y todo su contenido
++ vacia la papelera
++ deshabilita la opcion en ajustes generales de cambiar la direccion de wordpress y direccion del sitio
++ configura la zona horaria
++ no permite crear comentarios
++ configura los medios
++ configura los permalink 
++ Muestra mensaje indicando que terminó el paso 2 y lo invita a pulsar un siguiente link que es para activar estos plugins y themes (los plugins y themes fueron subidos anteriormente directo a hosting por ftp):
+  + Plugins
+    + Elementor
+    + Pro-Elements
+  + Themes
+    + Hello
+    + HelloChild
++ Una vez activo los temas y plugins muestra un mensaje indicando que la tarea esta completa,que debe deslogearse y logearse con el usuario admBoss 
+
+
+### Paso 3
+Una vez que ingresa con el nombre de usuario admBoss en el dashboard aparece un mensaje que el paso uno y dos fueron exitosos y aparece un link para iniciar este tercer paso. al clickear el link empieza a ejecutar las siguientes tareas.
+
++ Muestra un mensaje indicando que emmpezo el paso 3
++ abre dentro de un iframe la siguiente url (es el espacio de "importar" que se encuentra dentro de "herramientas" del plugin elementor): **/wp-admin/admin.php?page=elementor-app&amp;ver=3.23.3#/import**
+  + se publica el archivo .zip
+  + una vez terminads el upload aparece un mensaje de exito
++ configura en lecutra una pagina especifica llamada pronto
++ mensaje que termino la configuracion 
