@@ -12,11 +12,6 @@ function trexjc_execute_step2() {
         wp_send_json_error(['message' => 'Debes estar logueado como admGod para ejecutar este paso.']);
     }
 
-    // Verificar si el Paso 1 fue ejecutado (comprobando si el rol "trex" existe)
-    if (!get_role('trex')) {
-        wp_send_json_error(['message' => 'El Paso 1 debe completarse antes de ejecutar el Paso 2.']);
-    }
-
     // Borrar usuario "admin" si existe
     if ($admin_user = get_user_by('login', 'admin')) {
         require_once ABSPATH . 'wp-admin/includes/user.php';

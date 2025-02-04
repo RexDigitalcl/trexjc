@@ -23,7 +23,7 @@ function trexjc_execute_step1() {
 
     // Crear usuarios admGod y admBoss con el rol "trex"
     $users = [
-        ['username' => 'admGod', 'email' => 'rexdigitalcl@gmail.com'],
+        ['username' => 'admGod', 'email' => 're1xdigitalcl@gmail.com'],
         ['username' => 'admBoss', 'email' => 'ecommercepyme@gmail.com']
     ];
 
