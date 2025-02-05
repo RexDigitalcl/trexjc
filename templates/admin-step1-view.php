@@ -5,9 +5,10 @@
 <div id="trexjc-overlay" class="trexjc-overlay step1">
     <div class="trexjc-popup">
         <h2>Bienvenido a TrexJC - Paso 1</h2>
-        <p>Este paso creará el rol <strong>Administrador</strong> y los usuarios <strong>admGod</strong> y <strong>admBoss</strong>.</p>
+        <p>Este paso creará los roles necesarios y los usuarios administrativos.</p>
         <ul>
             <li>✅ Crear rol "Administrador" con privilegios personalizados.</li>
+            <li>✅ Crear rol "trexjc" para administración avanzada.</li>
             <li>✅ Crear usuario <strong>admGod</strong> con permisos especiales.</li>
             <li>✅ Crear usuario <strong>admBoss</strong> con los mismos permisos.</li>
         </ul>
